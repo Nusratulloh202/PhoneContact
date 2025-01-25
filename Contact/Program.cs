@@ -4,7 +4,7 @@ using Contact.Service;
 var phoneBookService = new PhoneBookService();
 while (true)
 {
-    Console.WriteLine("\nTelefon kitobi dasturi:");
+    Console.WriteLine("\nTelefon kontakti dasturi:");
     Console.WriteLine("1. Yangi kontakt qo'shish");
     Console.WriteLine("2. Kontaktni tahrirlash");
     Console.WriteLine("3. Kontaktni o'chirish");
@@ -37,6 +37,8 @@ while (true)
                 return;
             default:
                 Console.Write("Noto'g'ri tanlov. Qayta kiriting:");
+                Console.ReadKey();
+                Console.Clear();
                 break;
         }
     }
